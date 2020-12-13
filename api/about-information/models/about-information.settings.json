@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_informations",
+  "info": {
+    "name": "AboutInformation",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "shortdescription": {
+      "type": "text"
+    },
+    "paragraph2": {
+      "type": "text"
+    },
+    "AboutInformation": {
+      "type": "richtext"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

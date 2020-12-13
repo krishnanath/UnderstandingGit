@@ -1,0 +1,64 @@
+{
+  "kind": "singleType",
+  "collectionName": "sbainfos",
+  "info": {
+    "name": "sbainfo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "headerAddress": {
+      "type": "string"
+    },
+    "phoneNoDefault": {
+      "type": "string"
+    },
+    "phoneNoAlternate": {
+      "type": "string"
+    },
+    "footerAddress": {
+      "type": "richtext"
+    },
+    "footerSbaInfo": {
+      "type": "text"
+    },
+    "AboutUsTitle": {
+      "type": "string"
+    },
+    "AboutUsDescription": {
+      "type": "richtext"
+    },
+    "AboutUsDetailedDescription": {
+      "type": "richtext"
+    },
+    "AboutUsImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "quickContactFormBackgroundImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Email": {
+      "type": "email"
+    }
+  }
+}

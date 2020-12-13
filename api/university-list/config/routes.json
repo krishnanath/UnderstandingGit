@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/university-lists",
+      "handler": "university-list.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/university-lists/count",
+      "handler": "university-list.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/university-lists/:id",
+      "handler": "university-list.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/university-lists",
+      "handler": "university-list.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/university-lists/:id",
+      "handler": "university-list.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/university-lists/:id",
+      "handler": "university-list.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

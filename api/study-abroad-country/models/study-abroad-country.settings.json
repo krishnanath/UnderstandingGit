@@ -1,0 +1,75 @@
+{
+  "kind": "collectionType",
+  "collectionName": "study_abroad_countries",
+  "info": {
+    "name": "StudyAbroadCountry",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "countryflag": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "bannerimage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "countrycode": {
+      "type": "string"
+    },
+    "CountryInformation": {
+      "type": "richtext"
+    },
+    "QuickContactSectionTitle": {
+      "type": "string"
+    },
+    "QuickContactSectionInfo": {
+      "type": "richtext"
+    },
+    "StudentVisaRequirement": {
+      "type": "richtext"
+    },
+    "EmbassyInIndia": {
+      "type": "richtext"
+    },
+    "StudyPrograms": {
+      "type": "richtext"
+    }
+  }
+}

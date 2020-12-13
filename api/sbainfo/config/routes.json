@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sbainfo",
+      "handler": "sbainfo.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sbainfo",
+      "handler": "sbainfo.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sbainfo",
+      "handler": "sbainfo.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/visacategories",
+      "handler": "visacategory.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/visacategories/count",
+      "handler": "visacategory.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/visacategories/:id",
+      "handler": "visacategory.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/visacategories",
+      "handler": "visacategory.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/visacategories/:id",
+      "handler": "visacategory.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/visacategories/:id",
+      "handler": "visacategory.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

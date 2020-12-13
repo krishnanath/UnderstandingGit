@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "university_lists",
+  "info": {
+    "name": "UniversityList",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "universityname": {
+      "type": "string"
+    },
+    "contrycode": {
+      "type": "string"
+    },
+    "UniversityImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "universitydescription": {
+      "type": "text"
+    }
+  }
+}

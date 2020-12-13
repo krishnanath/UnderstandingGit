@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/study-abroad-countries",
+      "handler": "study-abroad-country.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/study-abroad-countries/count",
+      "handler": "study-abroad-country.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/study-abroad-countries/:id",
+      "handler": "study-abroad-country.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/study-abroad-countries",
+      "handler": "study-abroad-country.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/study-abroad-countries/:id",
+      "handler": "study-abroad-country.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/study-abroad-countries/:id",
+      "handler": "study-abroad-country.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
